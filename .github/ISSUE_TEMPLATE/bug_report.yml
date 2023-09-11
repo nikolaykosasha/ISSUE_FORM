@@ -12,13 +12,13 @@ body:
           required: true
   - type: textarea
     attributes:
-      label: Current Behavior
+      label: Фактический результат
       description: A concise description of what you're experiencing.
     validations:
       required: false
   - type: textarea
     attributes:
-      label: Expected Behavior
+      label: Ожидаемый результат
       description: A concise description of what you expected to happen.
     validations:
       required: false
