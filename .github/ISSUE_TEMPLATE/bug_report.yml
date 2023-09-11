@@ -1,31 +1,37 @@
 name: 🐞 Bug
 description: File a bug/issue
-title: "[BUG] <Заголовок>"
+title: "[BUG] <Что? Когда? Где?>"
 labels: ["Bug", "Needs Triage"]
 body:
   - type: checkboxes
     attributes:
-      label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the bug you encountered.
+      label: Есть ли уже существующая проблема с этим?
+      description: Пожалуйста, выполните поиск, чтобы узнать, существует ли уже проблема, с которой вы столкнулись.
       options:
-        - label: I have searched the existing issues
+        - label: Я искал(а) существующие проблемы
           required: true
   - type: textarea
     attributes:
+      label: Описание
+        description: Краткое описание того, с чем вы столкнулись.
+          validations:
+            required: false
+  - type: textarea
+    attributes:
       label: Фактический результат
-      description: A concise description of what you're experiencing.
+      description: Краткое описание того, с чем вы столкнулись.
     validations:
       required: false
   - type: textarea
     attributes:
       label: Ожидаемый результат
-      description: A concise description of what you expected to happen.
+      description: Краткое описание того, что вы ожидали бы, чтобы произошло.
     validations:
       required: false
   - type: textarea
     attributes:
-      label: Steps To Reproduce
-      description: Steps to reproduce the behavior.
+      label: Шаги для воспроизведения
+      description: Шаги для воспроизведения проблемы.
       placeholder: |
         1. In this environment...
         1. With this config...
@@ -35,9 +41,9 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: Environment
+      label: Окружение
       description: |
-        examples:
+        Примеры:
           - **OS**: Ubuntu 20.04
           - **Node**: 13.14.0
           - **npm**: 7.6.3
@@ -50,10 +56,10 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: Anything else?
+      label: Есть ли что-то еще?
       description: |
-        Links? References? Anything that will give us more context about the issue you are encountering!
-        
-        Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+        Ссылки? Справки? Все, что может предоставить нам больше контекста по поводу проблемы, с которой вы столкнулись!
+
+      Совет: Вы можете прикрепить изображения или файлы журналов, выделив эту область и перетащив файлы.
     validations:
       required: false
