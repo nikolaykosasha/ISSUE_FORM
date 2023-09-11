@@ -18,6 +18,12 @@ body:
       required: false
   - type: textarea
     attributes:
+      label: Серьезность
+      description: Краткое описание того, что вы ожидали бы, чтобы произошло.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
       label: Ожидаемый результат
       description: Краткое описание того, что вы ожидали бы, чтобы произошло.
     validations:
