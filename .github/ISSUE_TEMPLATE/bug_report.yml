@@ -19,11 +19,14 @@ body:
   - type: dropdown
     attributes:
       label: Серьезность
+      description: атрибут, характеризующий влияние дефекта на работоспособность системы.
       options:
-        - S1
-        - S2
-        - S3
-      multiple: true
+        - Блокирующая  ошибка, S1
+        - Критическая ошибка, S2
+        - Значительная ошибка, S3
+        - Минорная ошибка, S4
+        - Тривиальная ошибка, S5
+      multiple: false
     validations:
       required: true
   - type: textarea
