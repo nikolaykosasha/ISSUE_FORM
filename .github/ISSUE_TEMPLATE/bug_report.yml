@@ -12,13 +12,28 @@ body:
           required: true
   - type: textarea
     attributes:
-      label: Фактический результат
-      description: Краткое описание того, с чем вы столкнулись.
+      label: Описание
+      description: Это подробное описание вашего бага
     validations:
       required: false
-  - type: textarea
+  - type: dropdown
+    id: affected-packages
     attributes:
       label: Серьезность
+      description: Атрибут, характеризующий влияние дефекта на работоспособность системы.
+      options:
+          - animations
+          - bazel
+          - common
+          - compiler-cli
+          - compiler
+          - core
+        multiple: true
+        validations:
+        required: true
+  - type: textarea
+    attributes:
+      label: Фактический результат
       description: Краткое описание того, что вы ожидали бы, чтобы произошло.
     validations:
       required: false
