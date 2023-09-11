@@ -16,21 +16,6 @@ body:
       description: Это подробное описание вашего бага
     validations:
       required: false
-  - type: dropdown
-    id: affected-packages
-    attributes:
-      label: Серьезность
-      description: Атрибут, характеризующий влияние дефекта на работоспособность системы.
-      options:
-          - animations
-          - bazel
-          - common
-          - compiler-cli
-          - compiler
-          - core
-        multiple: true
-        validations:
-        required: true
   - type: textarea
     attributes:
       label: Фактический результат
