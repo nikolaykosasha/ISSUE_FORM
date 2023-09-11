@@ -12,12 +12,6 @@ body:
           required: true
   - type: textarea
     attributes:
-      label: Описание
-        description: Краткое описание того, с чем вы столкнулись.
-          validations:
-            required: false
-  - type: textarea
-    attributes:
       label: Фактический результат
       description: Краткое описание того, с чем вы столкнулись.
     validations:
