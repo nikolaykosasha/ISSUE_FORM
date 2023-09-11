@@ -16,6 +16,16 @@ body:
       description: Это подробное описание вашего бага
     validations:
       required: false
+  - type: dropdown
+    attributes:
+      label: Серьезность
+      options:
+        - S1
+        - S2
+        - S3
+      multiple: true
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Фактический результат
