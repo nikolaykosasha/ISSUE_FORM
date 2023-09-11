@@ -28,7 +28,7 @@ body:
         - Тривиальная ошибка, S5
       multiple: false
     validations:
-      required: true
+      required: false
   - type: dropdown
     attributes:
       label: Приоритет
@@ -39,11 +39,11 @@ body:
         - Low
       multiple: false
     validations:
-      required: true
+      required: false
   - type: textarea
     attributes:
       label: Фактический результат
-      description: Краткое описание того, что вы ожидали бы, чтобы произошло.
+      description: Краткое описание того, с чем вы столкнулись.
     validations:
       required: false
   - type: textarea
