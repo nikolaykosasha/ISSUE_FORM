@@ -1,8 +1,8 @@
-name: 🐞 Bug
-description: File a bug/issue
-title: "[BUG] <Заголовок>"
-labels: ["Bug", "Needs Triage"]
-body:
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
   - type: checkboxes
     attributes:
       label: Есть ли уже существующая проблема с этим?
